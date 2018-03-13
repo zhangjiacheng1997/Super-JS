@@ -25,6 +25,8 @@ String(null)//"null"
 String(true)//"true"
 String(false)//"false"
 
+//隐式类型转换----关系，算数，逻辑运算符的使用；流程语句的判断
+//显式类型转换----函数转换
 var temp="23"-1;
 typeof temp;
 //"number"
