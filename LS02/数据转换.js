@@ -9,7 +9,7 @@ Boolean(null);//False
 Boolean(NaN);Boolean(0);//False,其他数字都是True
 Boolean("");//False,其他字符串都是True包括空格字符串
 //对象转化为布尔值总是true
-if(new Boolean(false)){
+if(new Boolean(false)){//发生隐式类型转换
     console.log("执行");
 }   //输出执行，因为对象转为布尔值总为true
 
