@@ -9,7 +9,7 @@ console.log(Math.ceil(3.2));//向上取整
 console.log(Math.ceil(-3.2));//-3
 console.log(Math.round(-3.2));//-3
 console.log(Math.round(-3.5));//-3
-console.log(Math.round(-3.8));//-8
+console.log(Math.round(-3.8));//-4
 
 //--------------------------------------------------------------------------//
 

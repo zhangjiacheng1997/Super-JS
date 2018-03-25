@@ -45,3 +45,25 @@ typeof temp;
 var temp="23"+1;
 typeof temp;
 //"string"
+
+//------------------------------------------------------------//
+
+//巧用：若想把变量num转换成number类型可以-0，同理转换成string类型可以+0；
+/*Number和String之间进行判等时，会先转换成number类型再比较；Object和基本数据类型进行判断时先转换成基本数据类型 */
+
+//------------------------------------------------------------//
+
+//类型检测
+//typeof——结果返回String类型的结果
+typeof null;//"Object"历史遗留问题
+
+//instanceof——用于判断Object的下属类型和自定义的类
+[1,2] instanceof Array;//true
+function Person(){
+    //something
+}
+var bosn = new Person();
+bosn instanceof Person;//true
+
+/*typeof适合检测基本数据类型及function类型，但对于Null会失效*/
+/*instanceof适合检测一个对象是否属于自定义的一个类，但不同的iframe和window会检测失效*/

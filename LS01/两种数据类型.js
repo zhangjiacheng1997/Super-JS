@@ -1,7 +1,7 @@
 //JS的数据类型
 //数据类型分为基本数据类型和引用数据类型
-//基本数据类型有：Number，String，Boolean，Null，Underfined。
-//引用数据类型只有Object，（Array，Function，Date等）
+//基本数据类型有：Number，String，Boolean，Null，Undefined。
+//引用数据类型只有Object（Array，Function，Date等）
 //两者之间的不同：
 //1.内存分配方式的不同：引用对象一般分配在堆区，其引用在栈区或堆区。基本数据类型一般分配在栈区
     //（若对象的属性是基本数据类型，那么该属性分配在堆区，没有引用指向的堆区操作系统会定期处理）
