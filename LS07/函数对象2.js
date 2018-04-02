@@ -28,3 +28,28 @@ obj.x//1,x不是obj的属性
 obj.hasOwnProperty('x')//false
 var obj1 = Object.create(null);
 obj1.toString//undefined,对象最终并没指向Object
+
+/*--------------------------------------------------------------------------*/
+
+//对象属性
+
+/*访问*/
+var obj = {x:1,y:2}
+obj.x;
+obj[y];//传入的值都会转化成字符串类型
+//一般[]用于属性多时
+var p;
+for(p in obj){
+    console.log(obj[p]);
+}//利用for in访问容易访问到原型链上的属性，而且访问结果是无序的
+for(i=0;i<=n;i++){//n是对象属性数量
+    console.log(obj[x+i]);
+}
+/*删除*/
+//用delete删除，若某属性已被删除，再次delete仍会返回true
+var glo = 1;
+delete glo;//false,全局变量不可删
+var
+(function(){
+
+})
