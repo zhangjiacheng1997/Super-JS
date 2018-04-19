@@ -72,3 +72,6 @@ Object.defineProperty(obj2,"z",{value:3});
 //
 Object.keys(obj2);//只能访问到y，keys()方法只能访问到自身可枚举的属性
 Object.getOwnPropertyNames(obj2);//返回一个属性名的数组包括自身的可枚举和不可枚举
+//Extensible（Object.isExtensible( )、Object.preventExtensions( )）限制添加新属性
+//seal（Object.isSealed( )、Object.seal( )）在extend的限制基础上，增加限制可配置属性特性
+//freeze（Object.isFrozen( )、Object.freeze( )）在seal的限制基础上，增加限制可写属性特性
