@@ -47,3 +47,15 @@ f(1,2,3,4);
 var s = [5,4,0,9];
 s.sort(function(a,b){return a>b})//返回值是布尔类型的话大于零则交换
 s.sort(function(a,b){return a-b})//返回值是数字类型的话大于零则交换
+//forEach()
+var arr = [1,2,3]
+var arr1 = [1,2,6]
+arr.forEach(function(a,i){
+	console.log(a,this,i)
+},arr1)
+//every(),只要有一个不满足条件就不会再执行
+var arr2 = [2,5,8];
+var returnValue = arr2.every(function(a){
+    console.log(a);
+    return a%2===0;
+});
