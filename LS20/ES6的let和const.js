@@ -13,3 +13,6 @@ if(1){
 console.log(i);//找不到i
 const fee = function(){}//声明一个不变函数
 //const修饰的引用，引用不会变，但引用的内容可变
+
+//let会有暂存区锁死，只会锁死let定义的变量
+//let不能重复定义声明，var和let不能重复使用
